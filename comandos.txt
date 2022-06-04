@@ -1,0 +1,7 @@
+configure;delete vlans vlan1
+configure;set vlans vlan1
+configure;delete interfaces ge-0/0/46
+configure;set interfaces ge-0/0/46 unit 0 family ethernet-switching vlan members  vlan1
+configure;delete interfaces ge-0/0/47
+configure;set interfaces ge-0/0/47 unit 0 family ethernet-switching vlan members  vlan1
+configure;commit
