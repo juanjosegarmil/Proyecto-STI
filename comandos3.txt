@@ -1,1 +1,20 @@
-
+system-view;interfaces ge 0/0/1;port link-type trunk
+system-view;no vlan 0
+system-view;vlan 0
+system-view;no vlan 1
+system-view;vlan 1
+system-view;no vlan 2
+system-view;vlan 2
+system-view;no vlan 1 tagged a2
+system-view;interfaces ge 0/0/2;port link-type access;quit;vlan 1 tagged a2
+system-view;no vlan 1 tagged a3
+system-view;interfaces ge 0/0/3;port link-type access;quit;vlan 1 tagged a3
+system-view;no vlan 1 tagged a4
+system-view;interfaces ge 0/0/4;port link-type access;quit;vlan 1 tagged a4
+system-view;no vlan 2 tagged a5
+system-view;interfaces ge 0/0/5;port link-type access;quit;vlan 2 tagged a5
+system-view;no vlan 2 tagged a6
+system-view;interfaces ge 0/0/6;port link-type access;quit;vlan 2 tagged a6
+system-view;no vlan 2 tagged a7
+system-view;interfaces ge 0/0/7;port link-type access;quit;vlan 2 tagged a7
+system-view;commit

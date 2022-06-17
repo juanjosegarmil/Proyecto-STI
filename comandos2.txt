@@ -1,1 +1,21 @@
-
+system-view;clear configuration ge 0/0/1
+system-view;interfaces ge 0/0/1;port link-type trunk;port trunk allow-pass vlan all
+system-view;clear configuration ge 0/0/2
+system-view;interfaces ge 0/0/2;port link-type trunk;port trunk allow-pass vlan all
+system-view;clear configuration ge 0/0/3
+system-view;interfaces ge 0/0/3;port link-type trunk;port trunk allow-pass vlan all
+system-view;clear configuration ge 0/0/4
+system-view;interfaces ge 0/0/4;port link-type trunk;port trunk allow-pass vlan all
+system-view;clear configuration ge 0/0/5
+system-view;interfaces ge 0/0/5;port link-type trunk;port trunk allow-pass vlan all
+system-view;clear configuration ge 0/0/6
+system-view;interfaces ge 0/0/6;port link-type trunk;port trunk allow-pass vlan all
+system-view;clear configuration ge 0/0/7
+system-view;interfaces ge 0/0/7;port link-type trunk;port trunk allow-pass vlan all
+system-view;undo vlan 0
+system-view;vlan batch 0
+system-view;undo vlan 1
+system-view;vlan batch 1
+system-view;undo vlan 2
+system-view;vlan batch 2
+system-view;commit

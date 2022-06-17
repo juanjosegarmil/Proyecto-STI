@@ -1,7 +1,21 @@
+configure;delete interfaces ge-0/0/1
+configure;set interfaces ge-0/0/1 unit 0 family ethernet-switching port-mode trunk
+configure;delete vlans vlan0
+configure;set vlans vlan0
 configure;delete vlans vlan1
 configure;set vlans vlan1
-configure;delete interfaces ge-0/0/46
-configure;set interfaces ge-0/0/46 unit 0 family ethernet-switching vlan members  vlan1
-configure;delete interfaces ge-0/0/47
-configure;set interfaces ge-0/0/47 unit 0 family ethernet-switching vlan members  vlan1
+configure;delete vlans vlan2
+configure;set vlans vlan2
+configure;delete interfaces ge-0/0/2
+configure;set interfaces ge-0/0/2 unit 0 family ethernet-switching vlan members  vlan1
+configure;delete interfaces ge-0/0/3
+configure;set interfaces ge-0/0/3 unit 0 family ethernet-switching vlan members  vlan1
+configure;delete interfaces ge-0/0/4
+configure;set interfaces ge-0/0/4 unit 0 family ethernet-switching vlan members  vlan1
+configure;delete interfaces ge-0/0/5
+configure;set interfaces ge-0/0/5 unit 0 family ethernet-switching vlan members  vlan2
+configure;delete interfaces ge-0/0/6
+configure;set interfaces ge-0/0/6 unit 0 family ethernet-switching vlan members  vlan2
+configure;delete interfaces ge-0/0/7
+configure;set interfaces ge-0/0/7 unit 0 family ethernet-switching vlan members  vlan2
 configure;commit

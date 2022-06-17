@@ -15,11 +15,15 @@
           <div class="col">
             <label for="color" style="font-size: x-large; font-family: monospace;">Color #ffffff (Blanco) para modo access</label>
           </div>
+        </div>
     <br>
     <br>
     <div class="input-group">
         <div class="input-group-prepend">
     <input type="button" id="grabadora" value="Descargar conf" class="form-control">
+        </div>
+        <div class="input-group-prepend">
+    <input type="button" id="exposicion" value="Botón examen" onclick="examen()" class="form-control">
         </div>
        <!-- <div class="input-group-prepend">
     <input type="button" id="mostrar" value="Mostrar array" class="form-control">
@@ -186,7 +190,7 @@
                             <?php 
                                 for ($i=1; $i < 7; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -195,7 +199,7 @@
                             <?php 
                                 for ($i=7; $i < 13; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -208,7 +212,7 @@
                             <?php 
                                 for ($i=13; $i < 19; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -217,7 +221,7 @@
                             <?php 
                                 for ($i=19; $i < 25; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -230,7 +234,7 @@
                             <?php 
                                 for ($i=25; $i < 31; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -239,7 +243,7 @@
                             <?php 
                                 for ($i=31; $i < 37; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -252,7 +256,7 @@
                             <?php 
                                 for ($i=37; $i < 43; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -261,7 +265,7 @@
                             <?php 
                                 for ($i=43; $i < 48; $i++) { 
                                     ?>
-                                <td><button id="c<?php echo $i?>" onclick="activa('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="c<?php echo $i?>" onclick="activa2('c<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -298,7 +302,7 @@
                             <?php 
                                 for ($i=1; $i < 7; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -307,7 +311,7 @@
                             <?php 
                                 for ($i=7; $i < 13; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -320,7 +324,7 @@
                             <?php 
                                 for ($i=13; $i < 19; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -329,7 +333,7 @@
                             <?php 
                                 for ($i=19; $i < 25; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -342,7 +346,7 @@
                             <?php 
                                 for ($i=25; $i < 31; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -351,7 +355,7 @@
                             <?php 
                                 for ($i=31; $i < 37; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -364,7 +368,7 @@
                             <?php 
                                 for ($i=37; $i < 43; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -373,7 +377,7 @@
                             <?php 
                                 for ($i=43; $i < 48; $i++) { 
                                     ?>
-                                <td><button id="d<?php echo $i?>" onclick="activa('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
+                                <td><button id="d<?php echo $i?>" onclick="activa3('d<?php echo $i?>')" value="<?php echo $i?>"><?php echo $i?></button></td>
                             <?php
                         }
                         ?>
@@ -410,7 +414,7 @@
      var filename = "confswitch.txt";
      
      downloadasTextFile(filename, text);
-     location.reload();
+
  }, false);
 
       document.getElementById("btn").addEventListener("click", function(){

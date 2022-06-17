@@ -36,6 +36,6 @@
     }
     CloseCon($conn);
     echo"Guardado correctamente";
-    header("Location: http://localhost:8080/proyecto/proyecto.php"); /* Redirect browser */
+    header("Location: http://192.168.46.215:8080/Proyecto-STI/proyecto.php"); /* Redirect browser */
     exit();
     ?>

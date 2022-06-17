@@ -56,5 +56,6 @@
 	?>
 </table>
     <a a href="proyecto.php" class="btn btn-dark">Volver</a>
+    <a a href="borrartodo.php" class="btn btn-dark">Borrar todo</a>
 </body>
 </html>

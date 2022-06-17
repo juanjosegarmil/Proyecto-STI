@@ -1,7 +1,7 @@
 <?php 
     include 'dbconection.php';
     $conn = OpenCon();
-    $sql = "DELETE FROM vlan WHERE id='" . $_GET["id"] . "'";
+    $sql = "DELETE FROM vlan";
     if (mysqli_query($conn, $sql)) {
         header("Location: http://192.168.46.215:8080/Proyecto-STI/mostrar.php"); /* Redirect browser */
         exit();

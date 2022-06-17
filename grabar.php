@@ -23,8 +23,15 @@
         fwrite($comandos, "configure;set vlans vlan". $row["vlan"].""); 
         fwrite($comandos, "\n");
     }
-
-    $sql = "SELECT boca,vlan FROM vlan where modo = 'access' and modelo = 'juniper'";
+    $sql = "SELECT boca FROM vlan where modo = 'access' and modelo = 'juniper' and color = '#ffffff'";
+    $result = $conn->query($sql);
+    while($row = mysqli_fetch_array($result)) {
+        fwrite($comandos, "configure;delete interfaces ge-0/0/". $row["boca"]."");
+	fwrite($comandos, "\n");
+        fwrite($comandos, "configure;set interfaces ge-0/0/". $row["boca"]." unit 0 family ethernet-switching");
+        fwrite($comandos, "\n");
+    }
+    $sql = "SELECT boca,vlan FROM vlan where modo = 'access' and modelo = 'juniper' and color <> '#ffffff'";
     $result = $conn->query($sql);
     while($row = mysqli_fetch_array($result)) {
         fwrite($comandos, "configure;delete interfaces ge-0/0/". $row["boca"]."");
